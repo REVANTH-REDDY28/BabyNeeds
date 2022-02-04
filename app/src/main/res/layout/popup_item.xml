@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/baby_needs_primary">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/baby_needs_primary">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/popup_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/add_item"
+                android:fontFamily="@font/aclonica"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+            <EditText
+                android:id="@+id/textView_popup_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:hint="@string/name"
+                android:minHeight="48dp"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/textView_popup_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:hint="@string/quantity"
+                android:minHeight="48dp"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/textView_popup_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:hint="@string/color"
+                android:minHeight="48dp"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/textView_popup_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:hint="@string/size"
+                android:minHeight="48dp"
+                android:textSize="14sp" />
+            <Button
+                android:id="@+id/btn_popup_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:backgroundTint="@color/baby_needs_primary_dark"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
